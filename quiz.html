@@ -1,70 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/style.css" type="text/css" />
     <title>Quiz on triangles</title>
   </head>
   <body>
-    <h1>Quiz on triangles</h1>
-    <h3>For each correct answer you will get 1 point</h3>
-    <form id="quiz-form">
-      <div>
-        <p>
-          What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
-        </p>
-        <label><input type="radio" name="question1" value="45"/>45°</label>
-        <label><input type="radio" name="question1" value="90"/>90°</label>
-        <label><input type="radio" name="question1" value="60"/>60°</label>
-      </div>
+    <div id="app">
+      <h1>Quiz on triangles</h1>
+      <h3>For each correct answer you will get 1 point</h3>
+      <form id="quiz-form">
+        <div class="flex-column-center">
+          <p>
+            What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <div>
+            <label><input type="radio" name="question1" value="45" />45°</label>
+            <label><input type="radio" name="question1" value="90" />90°</label>
+            <label><input type="radio" name="question1" value="60" />60°</label>
+          </div>
+        </div>
 
-      <div>
-        <p>
-          What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
-        </p>
-        <label><input type="radio" name="question2" value="obtuse"/>obtuse</label>
-        <label><input type="radio" name="question2" value="acute"/>acute</label>
-        <label><input type="radio" name="question2" value="right angled"/>right angled</label>
-      </div>
-      
-      <div>
-        <p>
-          A triangle can have
-        </p>
-        <label><input type="radio" name="question3" value="one right angle"/>one right angle°</label>
-        <label><input type="radio" name="question3" value="two right angle"/>two right angle</label>
-      </div>
+        <div class="flex-column-center">
+          <p>
+            What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <div>
+            <label
+              ><input
+                type="radio"
+                name="question2"
+                value="obtuse"
+              />obtuse</label
+            >
+            <label
+              ><input type="radio" name="question2" value="acute" />acute</label
+            >
+            <label
+              ><input type="radio" name="question2" value="right angled" />right
+              angled</label
+            >
+          </div>
+        </div>
 
-      <div>
-        <p>
-          Which of the following can form a right angled triangle?
-        </p>
-        <label><input type="radio" name="question4" value="14, 15, 26"/>14, 15, 26</label>
-        <label><input type="radio" name="question4" value="12, 16, 20"/>12, 16, 20</label>
-      </div>
+        <div class="flex-column-center">
+          <p>A triangle can have</p>
+          <div>
+            <label
+              ><input
+                type="radio"
+                name="question3"
+                value="one right angle"
+              />one right angle°</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question3"
+                value="two right angle"
+              />two right angle</label
+            >
+          </div>
+        </div>
 
-      <div>
-        <p>
-          Which of the following triangles are always similar?
-        </p>
-        <label><input type="radio" name="question5" value="Equilateral triangle"/>Equilateral triangle</label>
-        <label><input type="radio" name="question5" value="Isosceles triangle"/>Isosceles triangle</label>
-      </div>
+        <div class="flex-column-center">
+          <p>Which of the following can form a right angled triangle?</p>
+          <div>
+            <label
+              ><input type="radio" name="question4" value="14, 15, 26" />14, 15,
+              26</label
+            >
+            <label
+              ><input type="radio" name="question4" value="12, 16, 20" />12, 16,
+              20</label
+            >
+          </div>
+        </div>
 
-      <div>
-        <p>
-          If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?
-        </p>
-        <label><input type="radio" name="question6" value="100"/>100°</label>
-        <label><input type="radio" name="question6" value="85"/>85°</label>
-      </div>
-    </form>
+        <div class="flex-column-center">
+          <p>Which of the following triangles are always similar?</p>
+          <div>
+            <label
+              ><input
+                type="radio"
+                name="question5"
+                value="Equilateral triangle"
+              />Equilateral triangle</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="question5"
+                value="Isosceles triangle"
+              />Isosceles triangle</label
+            >
+          </div>
+        </div>
 
-    <button>Submit Answers</button>
+        <div class="flex-column-center">
+          <p>
+            If one angle of a triangle is obtuse, then which one of the
+            following is the possible measure of remaining angles?
+          </p>
+          <div>
+            <label
+              ><input type="radio" name="question6" value="100" />100°</label
+            >
+            <label><input type="radio" name="question6" value="85" />85°</label>
+          </div>
+        </div>
+      </form>
 
-    <div id="output"></div>
+      <button>Submit Answers</button>
 
-	<script src="src/quiz.js"></script>
+      <div id="output"></div>
+    </div>
+    <script src="src/quiz.js"></script>
   </body>
 </html>
