@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Area of triangle</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h1>FWT</h1>
-        <div class="flex-row">
-          <a href="index.html">Is Triangle?</a>
-          <a href="quiz.html">Quiz on triangles</a>
-          <a href="hypotenuse.html">Hypotenuse</a>
-          <a href="area.html">Area of triangle</a>
-        </div>
-      </nav>
+      <h1>FWT</h1>
+      <div class="flex-row">
+        <a href="index.html">Is Triangle?</a>
+        <a href="quiz.html">Quiz on triangles</a>
+        <a href="hypotenuse.html">Hypotenuse</a>
+        <a href="area.html">Area of triangle</a>
+      </div>
+    </nav>
     <div id="app">
-        <h1>Calculate Area of a right triangle</h1>
-        <label for="input-base">Enter base value</label>
-        <input type="number" id="input-base" />
+      <h1>Calculate Area of a right triangle</h1>
+      <label for="input-base">Enter base value</label>
+      <input type="number" id="input-base" />
 
-        <label for="input-height">Enter height value</label>
-        <input type="number" id="input-height" />
-        <div id="error"></div>
-        <button>Calculate area</button>
+      <label for="input-height">Enter height value</label>
+      <input type="number" id="input-height" />
+      <div id="error"></div>
+      <button>Calculate area</button>
 
-        <div id="output"></div>
+      <div id="output"></div>
     </div>
-
+    <footer class="flex-column-center">
+      <p>Aditya Saxena | 2021</p>
+      <div class="flex-row">
+        <a
+          href="https://github.com/asaxena012"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-github-line"></i
+        ></a>
+        <a
+          href="http://linkedin.com/in/adityasaxena012"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-linkedin-box-line"></i
+        ></a>
+        <a
+          href="http://twitter.com/keenAadi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-twitter-line"></i
+        ></a>
+      </div>
+    </footer>
     <script src="src/area.js"></script>
-</body>
+  </body>
 </html>

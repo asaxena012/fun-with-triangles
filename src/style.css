@@ -88,6 +88,23 @@ nav a{
     color: var(--offwhite-color);
 }
 
+/* Footer */
+
+footer{
+    margin-bottom: auto;
+    background: var(--secondary-color);
+    padding-bottom: 1.5rem;
+    color: var(--offwhite-color);
+    border-top-left-radius: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--offwhite-color);
+    font-size: xx-large;
+    margin: 1rem 1rem 0rem 1rem;
+}
+
 /* Utilities */
 
 .flex-column-center{
