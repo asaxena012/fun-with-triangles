@@ -12,6 +12,12 @@
     outline: none;
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #app{
     display: flex;
     flex-direction: column;
