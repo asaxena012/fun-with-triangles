@@ -98,7 +98,6 @@ nav a{
 /* Footer */
 
 footer{
-    margin-bottom: auto;
     background: var(--secondary-color);
     padding-bottom: 1.5rem;
     color: var(--offwhite-color);
