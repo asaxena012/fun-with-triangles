@@ -5,6 +5,7 @@ const outputEl = document.querySelector('#output')
 const errorEl = document.querySelector('#error')
 
 const displayError = (message) => {
+    outputEl.textContent = ''
     errorEl.style.display = 'block';
     errorEl.textContent = message
 }
@@ -18,7 +19,7 @@ const calculateHypotenuse = () => {
         const perpendicular = Number(perpendicularEl.value);
         
         if(base < 0 || perpendicular < 0){
-            throw {message: "Please check if entered some positive numbers"}
+            throw {message: "Please check, enter some positive numbers"}
         }
         hideError()
         return Math.sqrt(base*base + perpendicular*perpendicular)
